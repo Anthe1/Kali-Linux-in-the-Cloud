@@ -1,0 +1,28 @@
+Create a new droplet in digital ocean. Specs: Ubuntu, 4GB RAM and Password
+Copy your droplet’s IP address
+Open PuTTY and paste your IP address in PuTTY
+Press Ok then accept
+Enter root then the password
+Once in, perform sudo apt update 
+Then sudo apt upgrade. Press y
+You’re now going to add a user. Command adduser mate
+Enter full name and info when prompted
+You will now modify the user by entering usermod -aG admin mate
+Now enter apt install tasksel then y 
+Enter tasksel and choose ubuntu desktop mate
+Enter command apt install xrdp
+Open remote desktop connections
+Copy droplet IP into RDC and login
+You will now see your server and open MateTerminal
+Enter sudo apt install virtualbox
+Enter sudo apt install virtualbox-ext-pack
+Click ok and accept the term by saying yes
+Restart your machine so that the updates can take effect
+Open VirtualBox and Firefox browser
+In Firefox search for Kali Linux application download
+Download Kali linux for VirtualBox and set up new VM in VirtualBox
+Start Kali VM in VirtualBox
+Encountered an issue where Kali will not completely boot and crash
+I needed to allocate part of the 2GB of RAM used for the server to be used for VB. 
+I did not know how to do it so I upgraded the RAM to 4GB in Digital Ocean.
+Kali finally started working
